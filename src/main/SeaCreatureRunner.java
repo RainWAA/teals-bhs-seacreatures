@@ -1,7 +1,4 @@
-import creatures.AquaticMammal;
-import creatures.SeaCreature;
-import creatures.Squid;
-import creatures.Whale;
+import creatures.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +10,7 @@ public class SeaCreatureRunner {
                 new Whale(),
                 new SeaCreature(),
                 new AquaticMammal(),
+                new Dolphin(),
         };
 
         List<String> list = new ArrayList<>();
@@ -20,6 +18,7 @@ public class SeaCreatureRunner {
             System.out.println(creature);
             creature.method1();
             creature.method2();
+            creature.method3();
             System.out.println();
         }
     }
